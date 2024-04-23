@@ -127,7 +127,7 @@ fi
 ```bash
 # Восстановить структуру каталогов
 mkdir dumps
-sc dumps
+cd dumps
 mkdir postgres
  
 # права на выполнение скрипта
