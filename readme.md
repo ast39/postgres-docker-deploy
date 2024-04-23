@@ -125,8 +125,16 @@ fi
 ---
 #### Настроить права на файловую систему
 ```bash
+# Восстановить структуру каталогов
+mkdir dumps
+sc dumps
+mkdir postgres
+ 
 # права на выполнение скрипта
 chmod +x db_dumper.sh
+
+# права на выполнение скрипта восстановления
+chmod +x db_recoverer.sh
 
 # права на сохранение дампов
 chmod +w -R dumps/postgres
